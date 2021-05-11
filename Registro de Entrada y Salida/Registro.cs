@@ -149,7 +149,8 @@ namespace Registro_de_Entrada_y_Salida
         private void btnEditar_Click(object sender, EventArgs e)
         {
             cn.Open();
-            SqlCommand cone = new SqlCommand("UPDATE Empleado SET EmpleadoId=@id,EmpleadoNombre=@nombre, EmpleadoApellido=@apellido, PuestoNombre=@puesto Where EmpleadoNombre = '" + txtNombreRegistro.Text + "'", cn);
+            SqlCommand cone = new SqlCommand("UPDATE Empleado SET EmpleadoId=@id,EmpleadoNombre=@nombre, EmpleadoApellido=@apellido," +
+                " PuestoNombre=@puesto Where EmpleadoNombre = '" + txtNombreRegistro.Text + "'", cn);
 
 
             cone.Parameters.AddWithValue("@id", txtIdentidad.Text);

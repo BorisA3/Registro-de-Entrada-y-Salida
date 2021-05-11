@@ -81,6 +81,7 @@ namespace Registro_de_Entrada_y_Salida
             this.Controls.Add(this.label1);
             this.Name = "ControldePersonal";
             this.Text = "ControldePersonal";
+            this.Load += new System.EventHandler(this.ControldePersonal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgControlPersonal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

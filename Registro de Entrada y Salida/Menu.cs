@@ -56,5 +56,10 @@ namespace Registro_de_Entrada_y_Salida
         {
             this.Close();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

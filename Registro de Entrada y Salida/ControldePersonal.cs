@@ -32,5 +32,10 @@ namespace Registro_de_Entrada_y_Salida
 
             //VisualizarControl(dgControlPersonal);
         }
+
+        private void ControldePersonal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

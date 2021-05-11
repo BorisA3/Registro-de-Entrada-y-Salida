@@ -197,6 +197,7 @@ namespace Registro_de_Entrada_y_Salida
             this.Controls.Add(this.btnRegistro);
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

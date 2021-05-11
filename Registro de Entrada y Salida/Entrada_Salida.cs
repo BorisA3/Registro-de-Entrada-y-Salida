@@ -51,39 +51,20 @@ namespace Registro_de_Entrada_y_Salida
         }
 
         private void btnEntrada_Click(object sender, EventArgs e)
-        {
-            if (conexion.RegistroEntrada(txtIdentidad.Text) == 0)
-            {
-
+        {          
                 MessageBox.Show(conexion.InsertarEntrada(txtIdentidad.Text, txtHora.Text));
-
-
-                txtIdentidad.Text = "";
-                
-            }
-            else
-            {
-                MessageBox.Show("Imposible de registrar, El registro ya existe");
-            }
+                txtIdentidad.Text = "";   
         }
 
         private void btnSalida_Click(object sender, EventArgs e)
         {
-            if (conexion.RegistroSalida(txtIdentidad.Text) == 0)
-            {
-
+           
                 MessageBox.Show(conexion.InsertarSalida(txtIdentidad.Text, txtHora.Text));
 
 
                 txtIdentidad.Text = "";
 
-
-
-            }
-            else
-            {
-                MessageBox.Show("Imposible de registrar, El registro ya existe");
-            }
+           
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
